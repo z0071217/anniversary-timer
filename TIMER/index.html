@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>纪念日计时器</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#ffffff" />
+</head>
+<body>
+  <div id="background"></div>
+
+  <div class="container">
+    <h1 id="title">我们在一起已经</h1>
+    <div id="days">0</div>
+    <p id="subtitle">每一天都值得纪念</p>
+    <button id="settingsBtn">⚙️ 设置</button>
+  </div>
+
+  <div id="settingsPanel" class="hidden">
+    <h2>设置</h2>
+    <label>标题文字：</label>
+    <input type="text" id="titleInput" />
+    <label>副标题文字：</label>
+    <input type="text" id="subtitleInput" />
+    <label>背景渐变色（起始）：</label>
+    <input type="color" id="color1" />
+    <label>背景渐变色（结束）：</label>
+    <input type="color" id="color2" />
+    <button id="saveBtn">保存</button>
+    <button id="closeBtn">关闭</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
